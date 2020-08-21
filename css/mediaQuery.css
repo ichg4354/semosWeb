@@ -1,35 +1,112 @@
+/* GYB */
+.header__logo {
+  height: 30vh;
+  background-color: white;
+}
+
+.main__history {
+  height: 70vh;
+  background-color: black;
+}
+.main__vision {
+  height: 100vh;
+  background-color: white;
+}
+.main__mockup {
+  height: 100vh;
+  background-color: black;
+}
+.main__team {
+  height: 200vh;
+  background-color: white;
+}
+.footer__text {
+  height: 30vh;
+  background-color: black;
+}
+
 @media (min-width: 1281px) {
-    .body{
-        background-color: red;
-    }
+  .body {
+    background-color: red;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .body{
-        background-color: orange;
-    }
+  .body {
+    background-color: orange;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .body{
-        background-color: yellow;
-    }
+  .body {
+    background-color: yellow;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .body{
-        background-color: green;
-    }
+  .body {
+    background-color: green;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .body{
-        background-color: blue;
-    }
+    .header__logo {
+        height: 25vh;
+        background-color: white;
+      }
+      
+      .main__history {
+        height: 75vh;
+        background-color: black;
+      }
+      .main__vision {
+        height: 100vh;
+        background-color: white;
+      }
+      .main__mockup {
+        height: 100vh;
+        background-color: black;
+      }
+      .main__team {
+        height: 200vh;
+        background-color: white;
+      }
+      .footer__text {
+        height: 25vh;
+        background-color: black;
+      }
+  .body {
+    background-color: blue;
+  }
 }
 
 @media (min-width: 5px) and (max-width: 480px) {
-    .body{
-        background-color: purple;
-    }
+  .header__logo {
+    height: 20vh;
+    background-color: white;
+  }
+
+  .main__history {
+    height: 80vh;
+    background-color: black;
+  }
+  .main__vision {
+    height: 100vh;
+    background-color: white;
+  }
+  .main__mockup {
+    height: 100vh;
+    background-color: black;
+  }
+  .main__team {
+    height: 200vh;
+    background-color: white;
+  }
+  .footer__text {
+    height: 20vh;
+    background-color: black;
+  }
+  .body {
+    background-color: purple;
+  }
 }
