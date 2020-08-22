@@ -85,12 +85,28 @@
 .main__mockup {
   height: 100vh;
   background-color: black;
+  position: relative;
 }
-.main__mockup img {
+.main__mockup .mockupBackground {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
 }
+.main__mockup .mockupTitle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10vw;
+  top: 14vh;
+}
+.main__mockup .mockupTitleTop {
+  width: 300px;
+  margin-bottom: 7vh;
+}
+.main__mockup .mockupTitleBottom {
+  width: 200px;
+}
+
 /* TEAM CSS */
 .main__team {
   height: 180vh;
