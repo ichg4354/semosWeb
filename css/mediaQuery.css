@@ -1,16 +1,52 @@
 /* GYB */
+/* HEADER GLOBAL CSS */
 .header__logo {
   height: 30vh;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo img {
+  width: 300px;
 }
 
+/* HISTORY CSS */
 .main__history {
   height: 70vh;
   background-color: black;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 10vw;
 }
+.main__history img {
+  height: 70vh;
+  float: right;
+}
+/* VISION CSS */
 .main__vision {
   height: 100vh;
   background-color: white;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+}
+.main__vision .vision__text{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.main__vision .vision__text img{
+  width: 300px;
+  height: 70px;
+}
+.main__vision .vision__image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main__vision .vision__image div{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
 }
 .main__mockup {
   height: 100vh;
@@ -50,31 +86,36 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .header__logo {
-        height: 25vh;
-        background-color: white;
-      }
-      
-      .main__history {
-        height: 75vh;
-        background-color: black;
-      }
-      .main__vision {
-        height: 100vh;
-        background-color: white;
-      }
-      .main__mockup {
-        height: 100vh;
-        background-color: black;
-      }
-      .main__team {
-        height: 200vh;
-        background-color: white;
-      }
-      .footer__text {
-        height: 25vh;
-        background-color: black;
-      }
+  .header__logo {
+    height: 25vh;
+    background-color: white;
+  }
+  .header__logo img {
+    width: 250px;
+  }
+
+  .main__history {
+    height: 75vh;
+    background-color: black;
+  }
+  .main__history {
+  }
+  .main__vision {
+    height: 100vh;
+    background-color: white;
+  }
+  .main__mockup {
+    height: 100vh;
+    background-color: black;
+  }
+  .main__team {
+    height: 200vh;
+    background-color: white;
+  }
+  .footer__text {
+    height: 25vh;
+    background-color: black;
+  }
   .body {
     background-color: blue;
   }
@@ -84,6 +125,12 @@
   .header__logo {
     height: 20vh;
     background-color: white;
+  }
+  .header__logo img {
+    width: 200px;
+  }
+
+  .main__history {
   }
 
   .main__history {
