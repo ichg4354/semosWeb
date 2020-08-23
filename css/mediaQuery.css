@@ -216,7 +216,7 @@
   }
 
   .body {
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 }
 
@@ -266,7 +266,7 @@
   }
 
   .body {
-    background-color: green;
+    /* background-color: green; */
   }
 }
 
@@ -364,7 +364,7 @@
     height: 40px;
   }
   .body {
-    background-color: blue;
+    /* background-color: blue; */
   }
 }
 
