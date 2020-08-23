@@ -392,7 +392,7 @@
     justify-content: center;
   }
   .main__history .history__text img:first-child {
-    width: 100px;
+    width: 25vw;
     margin-bottom: 20px;
     margin-top: 10px;
     height: fit-contentx;
@@ -401,7 +401,7 @@
     float: none;
   }
   .main__history .history__text img:nth-child(2) {
-    width: 210px;
+    width: 40vw;
     height: fit-content;
   }
   .main__history img {
