@@ -393,6 +393,7 @@
   }
   .main__history .history__text img:first-child {
     width: 25vw;
+    height: 2vh;
     margin-bottom: 20px;
     margin-top: 10px;
     height: fit-contentx;
