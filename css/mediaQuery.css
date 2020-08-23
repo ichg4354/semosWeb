@@ -16,6 +16,7 @@
 }
 .main__gradient img {
   width: 50vw;
+  height: .5vh;
 }
 /* HISTORY CSS */
 .main__history {
@@ -391,15 +392,17 @@
     justify-content: center;
   }
   .main__history .history__text img:first-child {
-    width: 110px;
+    width: 100px;
     margin-bottom: 20px;
     margin-top: 10px;
+    height: fit-contentx;
   }
   .main__history img {
     float: none;
   }
   .main__history .history__text img:nth-child(2) {
-    width: 200px;
+    width: 210px;
+    height: fit-content;
   }
   .main__history img {
     height: 60vh;
