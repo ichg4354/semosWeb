@@ -16,7 +16,7 @@
 }
 .main__gradient img {
   width: 50vw;
-  height: .5vh;
+  height: 0.5vh;
 }
 /* HISTORY CSS */
 .main__history {
@@ -380,6 +380,7 @@
     padding: 0 12vw;
     height: 80vh;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
     align-items: center;
   }
 
@@ -393,7 +394,7 @@
   }
   .main__history .history__text img:first-child {
     width: 25vw;
-    height: 2vh;
+    height: 6vh;
     margin-bottom: 20px;
     margin-top: 10px;
     height: fit-contentx;
@@ -402,7 +403,7 @@
     float: none;
   }
   .main__history .history__text img:nth-child(2) {
-    width: 40vw;
+    width: 45vw;
     height: fit-content;
   }
   .main__history img {
