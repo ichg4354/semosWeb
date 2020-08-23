@@ -404,7 +404,7 @@
   }
   .main__history .history__text img:nth-child(2) {
     width: 45vw;
-    height: fit-content;
+    height: 3.5vh;
   }
   .main__history img {
     height: 60vh;
