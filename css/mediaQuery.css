@@ -49,7 +49,7 @@
   height: 100vh;
   background-color: white;
   display: grid;
-  grid-template-rows: 2fr 4fr;
+  grid-template-rows: 2fr 6fr;
 }
 .main__vision .vision__text {
   display: flex;
@@ -221,48 +221,89 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* HISTORY CSS */
   .main__history {
-    padding: 0 12vw 0 16vw;
+    justify-content: center;
+    padding: 0 12vw;
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    align-items: center;
+  }
+
+  .main__history .history__text {
+    display: flex;
+    align-items: center;
+  }
+  .history__img {
+    display: flex;
+    justify-content: center;
   }
   .main__history .history__text img:first-child {
-    width: 130px;
-  }
-  .main__history .history__text img:nth-child(2) {
-    width: 230px;
+    width: 25vw;
+    height: 6vh;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: fit-contentx;
   }
   .main__history img {
-    height: 65vh;
+    float: none;
   }
+  .main__history .history__text img:nth-child(2) {
+    width: 45vw;
+    height: 3.5vh;
+  }
+  .main__history img {
+    height: 60vh;
+  }
+
   /* VISION */
+  .main__vision .vision__image {
+    grid-template-columns: 1fr;
+  }
   .main__vision .vision__text img {
-    width: 250px;
+    width: 200px;
   }
   .main__vision .vision__image .MVTitle {
-    width: 50px;
+    width: 40px;
   }
   .main__vision .vision__image .MVDetail {
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    width: 250px;
   }
   /* MOCKUP  */
   .main__mockup .mockupTitleTop {
     width: 250px;
+  }
+  .main__mockup img {
+    object-position: top center;
   }
   .main__mockup .mockupTitleBottom {
     width: 150px;
   }
   /* TEAM CSS */
   .main__team .team__text img {
-    width: 280px;
-    height: 35px;
+    width: 200px;
+    height: 25px;
   }
 
   .main__team .teamMates__teamMate .teamMate__icon img {
-    width: 80px;
+    width: 45px;
   }
   .main__team .teamMates__teamMate .teamMate__msg img {
-    width: 480px;
+    width: 280px;
+  }
+  .main__team .team__teamMates {
+    width: auto;
+  }
+  /* TEAMIMAGE */
+  .teamMate__teamImage img {
+    width: 300px;
+    height: 200px;
+  }
+  /* FOOTER */
+  .footer__text img {
+    width: 200px;
+    height: 40px;
   }
 
   .body {
@@ -312,6 +353,9 @@
   }
 
   /* VISION */
+  .main__vision {
+    grid-template-rows: 2fr 6fr;
+  }
   .main__vision .vision__image {
     grid-template-columns: 1fr;
   }
