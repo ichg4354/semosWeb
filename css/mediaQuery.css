@@ -442,7 +442,7 @@
   .main__history {
     justify-content: center;
     padding: 0 12vw;
-    height: 80vh;
+    height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr;
     align-items: center;
@@ -457,22 +457,25 @@
     justify-content: center;
   }
   .main__history .history__text img:first-child {
-    width: 25vw;
+    width: 120px;
     margin-bottom: 20px;
     margin-top: 10px;
     height: fit-contentx;
+    height: auto;
   }
   .main__history img {
     float: none;
   }
   .main__history .history__text img:nth-child(2) {
-    width: 45vw;
+    width: 220px;
+    height: auto;
   }
   .main__history img {
     height: 60vh;
   }
 
   /* VISION */
+
   .main__vision .vision__image {
     grid-template-columns: 1fr;
   }
