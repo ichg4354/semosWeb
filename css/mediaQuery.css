@@ -143,14 +143,15 @@
 
 /* TEAMIMAGE */
 .teamMate__teamImage {
-  height: 70vh;
+  height: 40vh;
   background-color: white;
   display: flex;
   justify-content: center;
+  display: flex;
+  align-items: flex-end;
 }
 .teamMate__teamImage img {
-  width: 600px;
-  height: 450px;
+  height: 40vh;
   opacity: 0.9;
   margin-top: 9vh;
 }
@@ -164,13 +165,31 @@
 }
 .footer__text img {
   width: 250px;
-  height: 50px;
+  height: auto;
 }
 
 @media (min-width: 1281px) {
+  .body {
+    background-color: red;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .teamMate__teamImage {
+    height: 100vh;
+  }
+  .teamMate__teamImage img {
+    width: 450px;
+    height: 350px;
+  }
+  .body {
+    background-color: orange;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation: "landscape") {
+  .body {
+    background-color: orchid;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -182,31 +201,37 @@
     grid-template-rows: 1fr 3fr;
   }
   .main__history .history__text img:first-child {
-    width: 150px;
+    width: 200px;
+    height: auto;
   }
   .main__history .history__text img:nth-child(2) {
-    width: 270px;
+    width: 400px;
+    height: auto;
   }
   .main__history img {
     height: 60vh;
   }
   /* VISION */
   .main__vision .vision__text img {
-    width: 250px;
+    width: 300px;
+    height: auto;
   }
   .main__vision .vision__image .MVTitle {
-    width: 50px;
+    width: 90px;
+    height: auto;
   }
   .main__vision .vision__image .MVDetail {
-    height: 400px;
-    width: 300px;
+    width: 400px;
+    height: auto;
   }
   /* MOCKUP  */
   .main__mockup .mockupTitleTop {
-    width: 250px;
+    width: 350px;
+    height: auto;
   }
   .main__mockup .mockupTitleBottom {
-    width: 150px;
+    width: 20px;
+    height: auto;
   }
   /* TEAM CSS */
   .main__team .team__text img {
@@ -215,14 +240,25 @@
   }
 
   .main__team .teamMates__teamMate .teamMate__icon img {
-    width: 70px;
+    width: 90px;
+    height: auto;
   }
   .main__team .teamMates__teamMate .teamMate__msg img {
-    width: 450px;
+    width: 600px;
+    height: auto;
   }
   /* TEAMIMAGE */
   .teamMate__teamImage {
-    height: 50vh;
+    height: 60vh;
+  }
+  .teamMate__teamImage {
+    height: 55vh;
+    width: auto;
+  }
+  /* FOOTER */
+  .footer__text img {
+    width: 350px;
+    height: auto;
   }
   .body {
     background-color: yellow;
@@ -264,7 +300,7 @@
   }
   /* TEAM CSS */
   .main__team {
-    height: 200vh;
+    height: 150vh;
   }
   .main__team .team__text img {
     width: 230px;
@@ -279,16 +315,16 @@
     width: 400px;
     height: auto;
   }
-/* TEAMIMAGE */
-.teamMate__teamImage{
-  height: 130vh;
-  display: flex;
-  align-items: flex-end;
-}
-.teamMate__teamImage img{
-  height: 300px;
-  width: auto;
-}
+  /* TEAMIMAGE */
+  .teamMate__teamImage {
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+  }
+  .teamMate__teamImage img {
+    height: 60vh;
+    width: auto;
+  }
 
   .body {
     background-color: green;
@@ -461,6 +497,9 @@
     width: 150px;
   }
   /* TEAM CSS */
+  .main__team{
+    height: 100vh;
+  }
   .main__team .team__text img {
     width: 200px;
     height: 25px;
@@ -477,7 +516,7 @@
   }
   /* TEAMIMAGE */
   .teamMate__teamImage {
-    height: 50vh;
+    height: 30vh;
   }
   .teamMate__teamImage img {
     width: 300px;
