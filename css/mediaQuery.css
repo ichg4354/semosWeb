@@ -109,10 +109,10 @@
 
 /* TEAM CSS */
 .main__team {
-  height: 160vh;
+  height: 100vh;
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-rows: 1fr 3fr;
 }
 .main__team .team__text {
   display: flex;
@@ -125,23 +125,25 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+.main__team .team__text img {
+  width: 250px;
+}
 .main__team .teamMates__teamMate .teamMate {
   display: flex;
   flex-direction: row;
 }
 .main__team .teamMates__teamMate .teamMate__icon img {
   width: 100px;
+  margin-right: 20px;
 }
 .main__team .teamMates__teamMate .teamMate__msg img {
   width: 500px;
 }
-.main__team .team__text img {
-  width: 300px;
-  height: 40px;
-}
 
 /* TEAMIMAGE */
 .teamMate__teamImage {
+  height: 70vh;
+  background-color: white;
   display: flex;
   justify-content: center;
 }
@@ -216,7 +218,7 @@
   }
 
   .body {
-    /* background-color: yellow; */
+    background-color: yellow;
   }
 }
 
@@ -266,7 +268,7 @@
   }
 
   .body {
-    /* background-color: green; */
+    background-color: green;
   }
 }
 
@@ -364,7 +366,7 @@
     height: 40px;
   }
   .body {
-    /* background-color: blue; */
+    background-color: blue;
   }
 }
 
@@ -463,6 +465,6 @@
     height: 40px;
   }
   .body {
-    /* background-color: purple; */
+    background-color: purple;
   }
 }
