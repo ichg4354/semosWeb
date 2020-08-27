@@ -27,7 +27,7 @@
   padding: 0 13vw 0 17vw;
 }
 .main__history img {
-  height: 75vh;
+  height: 60vh;
   float: right;
 }
 .main__history .history__text {
@@ -109,10 +109,10 @@
 
 /* TEAM CSS */
 .main__team {
-  height: 160vh;
+  height: 100vh;
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-rows: 1fr 3fr;
 }
 .main__team .team__text {
   display: flex;
@@ -125,29 +125,33 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+.main__team .team__text img {
+  width: 250px;
+  margin-top: 50px;
+}
 .main__team .teamMates__teamMate .teamMate {
   display: flex;
   flex-direction: row;
 }
 .main__team .teamMates__teamMate .teamMate__icon img {
   width: 100px;
+  margin-right: 20px;
 }
 .main__team .teamMates__teamMate .teamMate__msg img {
   width: 500px;
 }
-.main__team .team__text img {
-  width: 300px;
-  height: 40px;
-}
 
 /* TEAMIMAGE */
 .teamMate__teamImage {
+  height: 40vh;
+  background-color: white;
   display: flex;
   justify-content: center;
+  display: flex;
+  align-items: flex-end;
 }
 .teamMate__teamImage img {
-  width: 600px;
-  height: 450px;
+  height: 40vh;
   opacity: 0.9;
   margin-top: 9vh;
 }
@@ -161,46 +165,73 @@
 }
 .footer__text img {
   width: 250px;
-  height: 50px;
+  height: auto;
 }
 
 @media (min-width: 1281px) {
+  .body {
+    background-color: red;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .teamMate__teamImage {
+    height: 100vh;
+  }
+  .teamMate__teamImage img {
+    width: 450px;
+    height: 350px;
+  }
+  .body {
+    background-color: orange;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation: "landscape") {
+  .body {
+    background-color: orchid;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* HISTORY CSS */
   .main__history {
+    height: 75vh;
     padding: 0 12vw 0 16vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
   }
   .main__history .history__text img:first-child {
-    width: 120px;
+    width: 200px;
+    height: auto;
   }
   .main__history .history__text img:nth-child(2) {
-    width: 220px;
+    width: 400px;
+    height: auto;
   }
   .main__history img {
     height: 60vh;
   }
   /* VISION */
   .main__vision .vision__text img {
-    width: 250px;
+    width: 300px;
+    height: auto;
   }
   .main__vision .vision__image .MVTitle {
-    width: 50px;
+    width: 90px;
+    height: auto;
   }
   .main__vision .vision__image .MVDetail {
-    height: 400px;
-    width: 300px;
+    width: 400px;
+    height: auto;
   }
   /* MOCKUP  */
   .main__mockup .mockupTitleTop {
-    width: 250px;
+    width: 350px;
+    height: auto;
   }
   .main__mockup .mockupTitleBottom {
-    width: 150px;
+    width: 20px;
+    height: auto;
   }
   /* TEAM CSS */
   .main__team .team__text img {
@@ -209,20 +240,35 @@
   }
 
   .main__team .teamMates__teamMate .teamMate__icon img {
-    width: 70px;
+    width: 90px;
+    height: auto;
   }
   .main__team .teamMates__teamMate .teamMate__msg img {
-    width: 450px;
+    width: 600px;
+    height: auto;
   }
-
+  /* TEAMIMAGE */
+  .teamMate__teamImage {
+    height: 60vh;
+  }
+  .teamMate__teamImage {
+    height: 55vh;
+    width: auto;
+  }
+  /* FOOTER */
+  .footer__text img {
+    width: 350px;
+    height: auto;
+  }
   .body {
-    /* background-color: yellow; */
+    background-color: yellow;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* HISTORY CSS */
   .main__history {
+    height: 150vh;
     padding: 0 12vw 0 16vw;
   }
   .main__history .history__text img:first-child {
@@ -232,7 +278,7 @@
     width: 230px;
   }
   .main__history img {
-    height: 65vh;
+    height: 100vh;
   }
   /* VISION */
   .main__vision .vision__text img {
@@ -253,20 +299,35 @@
     width: 150px;
   }
   /* TEAM CSS */
+  .main__team {
+    height: 150vh;
+  }
   .main__team .team__text img {
-    width: 280px;
-    height: 35px;
+    width: 230px;
+    height: auto;
   }
 
   .main__team .teamMates__teamMate .teamMate__icon img {
-    width: 80px;
+    width: 70px;
+    height: auto;
   }
   .main__team .teamMates__teamMate .teamMate__msg img {
-    width: 480px;
+    width: 400px;
+    height: auto;
+  }
+  /* TEAMIMAGE */
+  .teamMate__teamImage {
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+  }
+  .teamMate__teamImage img {
+    height: 60vh;
+    width: auto;
   }
 
   .body {
-    /* background-color: green; */
+    background-color: green;
   }
 }
 
@@ -313,7 +374,7 @@
 
   /* VISION */
   .main__vision {
-    grid-template-rows: 2fr 6fr;
+    grid-template-rows: 1fr 3fr;
   }
   .main__vision .vision__image {
     grid-template-columns: 1fr;
@@ -364,7 +425,7 @@
     height: 40px;
   }
   .body {
-    /* background-color: blue; */
+    background-color: blue;
   }
 }
 
@@ -397,7 +458,6 @@
   }
   .main__history .history__text img:first-child {
     width: 25vw;
-    height: 6vh;
     margin-bottom: 20px;
     margin-top: 10px;
     height: fit-contentx;
@@ -407,7 +467,6 @@
   }
   .main__history .history__text img:nth-child(2) {
     width: 45vw;
-    height: 3.5vh;
   }
   .main__history img {
     height: 60vh;
@@ -438,6 +497,9 @@
     width: 150px;
   }
   /* TEAM CSS */
+  .main__team{
+    height: 100vh;
+  }
   .main__team .team__text img {
     width: 200px;
     height: 25px;
@@ -453,6 +515,9 @@
     width: auto;
   }
   /* TEAMIMAGE */
+  .teamMate__teamImage {
+    height: 30vh;
+  }
   .teamMate__teamImage img {
     width: 300px;
     height: 200px;
@@ -463,6 +528,6 @@
     height: 40px;
   }
   .body {
-    /* background-color: purple; */
+    background-color: purple;
   }
 }
