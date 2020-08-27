@@ -513,6 +513,7 @@
   }
   .main__team .teamMates__teamMate .teamMate__msg img {
     width: 280px;
+    margin-right: 10px;
   }
   .main__team .team__teamMates {
     width: auto;
