@@ -278,7 +278,7 @@
     width: 230px;
   }
   .main__history img {
-    height: 100vh;
+    height: 80vh;
   }
   /* VISION */
   .main__vision .vision__text img {
@@ -519,8 +519,8 @@
     height: 30vh;
   }
   .teamMate__teamImage img {
-    width: 300px;
-    height: 200px;
+    width: 60vw;
+    height: auto;
   }
   /* FOOTER */
   .footer__text img {
